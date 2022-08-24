@@ -1,0 +1,14 @@
+{
+    // created by vscode papyrus-lang papyrus.skyrimSpecialEdition.generateProject
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "papyrus.skyrimSpecialEdition.enabled": false,
+        "papyrus.fallout4.enabled": false,
+        "papyrus.skyrim.enabled": false,
+        "papyrus.skyrimSpecialEdition.installPath": "E:\\Games\\Steam\\steamapps\\common\\Skyrim Special Edition"
+    }
+}

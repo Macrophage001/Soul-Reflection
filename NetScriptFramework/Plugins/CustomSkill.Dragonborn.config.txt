@@ -1,0 +1,215 @@
+# Encoded : UTF-8 or UCS-2 LE BOM
+
+#------------------------------------------------------------------
+# Skill Name
+#------------------------------------------------------------------
+Name = "Dragonborn"
+
+#------------------------------------------------------------------
+# Skill description
+#------------------------------------------------------------------
+Description = "Unlock your words of power and battle the way dragons do!"
+
+#------------------------------------------------------------------
+# Skydome model path
+#------------------------------------------------------------------
+Skydome = "DLC01/Interface/INTVampirePerkSkydome.nif"
+SkydomeNormalNif = false
+
+#------------------------------------------------------------------
+# Global Valiable : Skill Level - DragonbornSkillLevel
+#------------------------------------------------------------------
+LevelFile = "DragonbornPerkMenu.esp"
+LevelId = 0x02000D61
+
+#------------------------------------------------------------------
+# Global Variable : Level up ratio - DragonbornSkillUpRatio
+#------------------------------------------------------------------
+RatioFile = "DragonbornPerkMenu.esp"
+RatioId = 0x02000D62
+
+#------------------------------------------------------------------
+# Global Variable : Show skill level up to X - DragonbornShowLevelUp
+#------------------------------------------------------------------
+ShowLevelupFile = "DragonbornPerkMenu.esp"
+ShowLevelupId = 0x02000D63
+
+#------------------------------------------------------------------
+# Global Variable : Open Perk Tree ON:1 OFF:0 - DragonbornSkillOpenMenu
+#------------------------------------------------------------------
+ShowMenuFile = "DragonbornPerkMenu.esp"
+ShowMenuId = 0x02000D64
+
+#------------------------------------------------------------------
+# Global Variable : Custom Perk point -> DragonbornPerkPoint
+#------------------------------------------------------------------
+PerkPointsFile = "DragonbornPerkMenu.esp"
+PerkPointsId = 0x02000D65
+
+#------------------------------------------------------------------
+# Global Variable :  Legendary Count -> DragonbornSkillLegendaryCount
+#------------------------------------------------------------------
+LegendaryFile = "DragonbornPerkMenu.esp"
+LegendaryId = 0x02000D66
+
+#------------------------------------------------------------------
+# Global Variable :  Color of Skill name -> White
+#------------------------------------------------------------------
+ColorFile = "DragonbornPerkMenu.esp"
+ColorId = 0
+
+#------------------------------------------------------------------
+# Global Variable :  Reload settings in game -> Disabled
+#------------------------------------------------------------------
+DebugReloadFile = "DragonbornPerkMenu.esp"
+DebugReloadId = 0
+
+#------------------------------------------------------------------
+# Root Node 0 
+#------------------------------------------------------------------
+Node0.Enable = true
+Node0.Links = "1 2 3 4 5 6 7 8 9 10 11 12 13 14"
+
+#------------------------------------------------------------------
+# Perk Tree
+#------------------------------------------------------------------
+
+# 1 : Aura Whisper
+#------------------------------------------------------------------
+Node1.Enable = true
+Node1.PerkFile = "DragonbornPerkMenu.esp"
+Node1.PerkId = 0x02001854
+Node1.X = 0.50
+Node1.Y = 0
+Node1.GridX = 0
+Node1.GridY = 0
+
+# 2 : Animal Allegiance
+#------------------------------------------------------------------
+Node2.Enable = true
+Node2.PerkFile = "DragonbornPerkMenu.esp"
+Node2.PerkId = 0x02001850
+Node2.X = 0.50
+Node2.Y = 0.25
+Node2.GridX = 1
+Node2.GridY = 0
+
+# 3 : Become Ethereal
+#------------------------------------------------------------------
+Node3.Enable = true
+Node3.PerkFile = "DragonbornPerkMenu.esp"
+Node3.PerkId = 0x02001857
+Node3.X = 0.50
+Node3.Y = 0
+Node3.GridX = 2
+Node3.GridY = 0
+
+# 4 : Disarm
+#------------------------------------------------------------------
+Node4.Enable = true
+Node4.PerkFile = "DragonbornPerkMenu.esp"
+Node4.PerkId = 0x02001862
+Node4.X = 0.50
+Node4.Y = 0
+Node4.GridX = 0
+Node4.GridY = 1
+
+# 5 : Dismay
+#------------------------------------------------------------------
+Node5.Enable = true
+Node5.PerkFile = "DragonbornPerkMenu.esp"
+Node5.PerkId = 0x0200186E
+Node5.X = 0.50
+Node5.Y = 0.25
+Node5.GridX = 1
+Node5.GridY = 1
+
+# 6 : Elemental Fury
+#------------------------------------------------------------------
+Node6.Enable = true
+Node6.PerkFile = "DragonbornPerkMenu.esp"
+Node6.PerkId = 0x02001876
+Node6.X = 0.50
+Node6.Y = 0
+Node6.GridX = 2
+Node6.GridY = 1
+
+# 7 : Kyne's Peace
+#------------------------------------------------------------------
+Node7.Enable = true
+Node7.PerkFile = "DragonbornPerkMenu.esp"
+Node7.PerkId = 0x02001886
+Node7.X = 0.50
+Node7.Y = 0
+Node7.GridX = 0
+Node7.GridY = 2
+
+# 8 : Marked for Death
+#------------------------------------------------------------------
+Node8.Enable = true
+Node8.PerkFile = "DragonbornPerkMenu.esp"
+Node8.PerkId = 0x02001892
+Node8.X = 0.50
+Node8.Y = 0.25
+Node8.GridX = 1
+Node8.GridY = 2
+
+# 9 : Slow Time
+#------------------------------------------------------------------
+Node9.Enable = true
+Node9.PerkFile = "DragonbornPerkMenu.esp"
+Node9.PerkId = 0x0200189E
+Node9.X = 0.50
+Node9.Y = 0
+Node9.GridX = 2
+Node9.GridY = 2
+
+# 10 : Throw Voice
+#------------------------------------------------------------------
+Node10.Enable = true
+Node10.PerkFile = "DragonbornPerkMenu.esp"
+Node10.PerkId = 0x020018AA
+Node10.X = 0.50
+Node10.Y = 0.25
+Node10.GridX = 1
+Node10.GridY = 3
+
+# 11 : Fire Breath
+#------------------------------------------------------------------
+Node11.Enable = true
+Node11.PerkFile = "DragonbornPerkMenu.esp"
+Node11.PerkId = 0x02000D67
+Node11.X = 0.25
+Node11.Y = 0
+Node11.GridX = 3
+Node11.GridY = 0
+
+# 12 : Frost Breath
+#------------------------------------------------------------------
+Node12.Enable = true
+Node12.PerkFile = "DragonbornPerkMenu.esp"
+Node12.PerkId = 0x020018B6
+Node12.X = 0.25
+Node12.Y = 0
+Node12.GridX = 3
+Node12.GridY = 1
+
+# 13 : Ice Form
+#------------------------------------------------------------------
+Node13.Enable = true
+Node13.PerkFile = "DragonbornPerkMenu.esp"
+Node13.PerkId = 0x02003910
+Node13.X = 0.25
+Node13.Y = 0
+Node13.GridX = 3
+Node13.GridY = 2
+
+# 14 : Cyclone
+#------------------------------------------------------------------
+Node14.Enable = true
+Node14.PerkFile = "DragonbornPerkMenu.esp"
+Node14.PerkId = 0x020082CC
+Node14.X = 0.25
+Node14.Y = 0
+Node14.GridX = 3
+Node14.GridY = 2
