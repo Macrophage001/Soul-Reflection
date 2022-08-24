@@ -3,13 +3,15 @@ Scriptname DPDragonKillTrackerScript extends ObjectReference
 
 Quest Property DPDragonKilledQuest Auto
 GlobalVariable Property DPCurrentSoulXP Auto
+GlobalVariable Property DPDragonXP Auto
 ReferenceAlias property Victim Auto
 
 Event OnInit()
-    Int xpGained = 20;
+    ;In case I want to apply multipliers to xp gain later, storing in seperate variable first.
+    Float xpGained = DPDragonXP.GetValue();
 
     DPCurrentSoulXP.Mod(xpGained);
-    Debug.Notification("+" + xpGained + " Soul XP");
+    ; Debug.Notification("+" + xpGained + " Soul XP");
     
     DPDragonKilledQuest.Reset();
     DPDragonKilledQuest.Stop();

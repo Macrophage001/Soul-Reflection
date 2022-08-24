@@ -133,6 +133,8 @@ WordWallListenerQuestScript Property FreeformHighHrothgarA Auto
 
 GlobalVariable Property DPCurrentSoulXP Auto
 
+GlobalVariable Property DPWordWallXP Auto
+
 ;************************************
 
 bool Function isLooking()
@@ -153,7 +155,10 @@ Function StartFX()
 		finishedIMOD02 = false
 		finishedIMOD03 = false
 		
-		DPCurrentSoulXP.Mod(50)
+		;In case I want to apply multipliers to xp gain later, storing in seperate variable first.
+		Float xpGained = DPWordWallXP.GetValue();
+
+		DPCurrentSoulXP.Mod(xpGained)
 		
 		shoutGlobal.value += 1
 		wordSound.disableNoWait()
