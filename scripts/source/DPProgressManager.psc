@@ -7,6 +7,7 @@ GlobalVariable Property DragonbornShowLevelUp Auto
 
 GlobalVariable Property DPCurrentSoulXP Auto
 GlobalVariable Property DPMaxSoulXP Auto
+GlobalVariable Property DPBaseMaxSoulXP Auto
 
 GlobalVariable Property DPMaxSoulXPMultiplier Auto
 
@@ -28,10 +29,9 @@ Event OnUpdate()
     if (DPCurrentSoulXP.GetValue() >= DPMaxSoulXP.GetValue())
         DragonbornSkillPerkPoint.Mod(1);
 
-        float newMaxSoulXP = DPMaxSoulXP.GetValue() * DPMaxSoulXPMultiplier.GetValue();
-        DPMaxSoulXP.SetValue(newMaxSoulXP);
-
         DragonbornShowLevelUp.Mod(1)
+        float newMaxSoulXP = DPBaseMaxSoulXP.GetValue() * Math.pow(DPMaxSoulXPMultiplier.GetValue(), DragonbornShowLevelUp.GetValue());
+        DPMaxSoulXP.SetValue(newMaxSoulXP);
 
         UpdateCurrentSoulXP();
     EndIf
