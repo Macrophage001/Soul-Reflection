@@ -68,7 +68,7 @@ DebugReloadId = 0
 # Root Node 0 
 #------------------------------------------------------------------
 Node0.Enable = true
-Node0.Links = "1 2 3 4 5 6 7 8 9 10 11 12 13 14"
+Node0.Links = "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15"
 
 #------------------------------------------------------------------
 # Perk Tree
@@ -78,7 +78,7 @@ Node0.Links = "1 2 3 4 5 6 7 8 9 10 11 12 13 14"
 #------------------------------------------------------------------
 Node1.Enable = true
 Node1.PerkFile = "SoulReflection.esp"
-Node1.PerkId = 0x02001854
+Node1.PerkId = 0x04001854
 Node1.X = 0.50
 Node1.Y = 0
 Node1.GridX = 0
@@ -88,7 +88,7 @@ Node1.GridY = 0
 #------------------------------------------------------------------
 Node2.Enable = true
 Node2.PerkFile = "SoulReflection.esp"
-Node2.PerkId = 0x02001850
+Node2.PerkId = 0x04001850
 Node2.X = 0.50
 Node2.Y = 0.25
 Node2.GridX = 1
@@ -98,7 +98,7 @@ Node2.GridY = 0
 #------------------------------------------------------------------
 Node3.Enable = true
 Node3.PerkFile = "SoulReflection.esp"
-Node3.PerkId = 0x02001857
+Node3.PerkId = 0x04001857
 Node3.X = 0.50
 Node3.Y = 0
 Node3.GridX = 2
@@ -108,7 +108,7 @@ Node3.GridY = 0
 #------------------------------------------------------------------
 Node4.Enable = true
 Node4.PerkFile = "SoulReflection.esp"
-Node4.PerkId = 0x02001862
+Node4.PerkId = 0x04001862
 Node4.X = 0.50
 Node4.Y = 0
 Node4.GridX = 0
@@ -118,7 +118,7 @@ Node4.GridY = 1
 #------------------------------------------------------------------
 Node5.Enable = true
 Node5.PerkFile = "SoulReflection.esp"
-Node5.PerkId = 0x0200186E
+Node5.PerkId = 0x0400186E
 Node5.X = 0.50
 Node5.Y = 0.25
 Node5.GridX = 1
@@ -128,7 +128,7 @@ Node5.GridY = 1
 #------------------------------------------------------------------
 Node6.Enable = true
 Node6.PerkFile = "SoulReflection.esp"
-Node6.PerkId = 0x02001876
+Node6.PerkId = 0x04001876
 Node6.X = 0.50
 Node6.Y = 0
 Node6.GridX = 2
@@ -138,7 +138,7 @@ Node6.GridY = 1
 #------------------------------------------------------------------
 Node7.Enable = true
 Node7.PerkFile = "SoulReflection.esp"
-Node7.PerkId = 0x02001886
+Node7.PerkId = 0x04001886
 Node7.X = 0.50
 Node7.Y = 0
 Node7.GridX = 0
@@ -148,7 +148,7 @@ Node7.GridY = 2
 #------------------------------------------------------------------
 Node8.Enable = true
 Node8.PerkFile = "SoulReflection.esp"
-Node8.PerkId = 0x02001892
+Node8.PerkId = 0x04001892
 Node8.X = 0.50
 Node8.Y = 0.25
 Node8.GridX = 1
@@ -158,7 +158,7 @@ Node8.GridY = 2
 #------------------------------------------------------------------
 Node9.Enable = true
 Node9.PerkFile = "SoulReflection.esp"
-Node9.PerkId = 0x0200189E
+Node9.PerkId = 0x0400189E
 Node9.X = 0.50
 Node9.Y = 0
 Node9.GridX = 2
@@ -168,7 +168,7 @@ Node9.GridY = 2
 #------------------------------------------------------------------
 Node10.Enable = true
 Node10.PerkFile = "SoulReflection.esp"
-Node10.PerkId = 0x020018AA
+Node10.PerkId = 0x040018AA
 Node10.X = 0.50
 Node10.Y = 0.25
 Node10.GridX = 1
@@ -178,7 +178,7 @@ Node10.GridY = 3
 #------------------------------------------------------------------
 Node11.Enable = true
 Node11.PerkFile = "SoulReflection.esp"
-Node11.PerkId = 0x02000D67
+Node11.PerkId = 0x04000D67
 Node11.X = 0.25
 Node11.Y = 0
 Node11.GridX = 3
@@ -188,7 +188,7 @@ Node11.GridY = 0
 #------------------------------------------------------------------
 Node12.Enable = true
 Node12.PerkFile = "SoulReflection.esp"
-Node12.PerkId = 0x020018B6
+Node12.PerkId = 0x040018B6
 Node12.X = 0.25
 Node12.Y = 0
 Node12.GridX = 3
@@ -198,7 +198,7 @@ Node12.GridY = 1
 #------------------------------------------------------------------
 Node13.Enable = true
 Node13.PerkFile = "SoulReflection.esp"
-Node13.PerkId = 0x02003910
+Node13.PerkId = 0x04003910
 Node13.X = 0.25
 Node13.Y = 0
 Node13.GridX = 3
@@ -208,8 +208,18 @@ Node13.GridY = 2
 #------------------------------------------------------------------
 Node14.Enable = true
 Node14.PerkFile = "SoulReflection.esp"
-Node14.PerkId = 0x020082CC
-Node14.X = 0.25
+Node14.PerkId = 0x040082CC
+Node14.X = 0
 Node14.Y = 0
 Node14.GridX = 3
-Node14.GridY = 2
+Node14.GridY = 3
+
+# 15 : Drain Vitality
+#------------------------------------------------------------------
+Node15.Enable = true
+Node15.PerkFile = "SoulReflection.esp"
+Node15.PerkId = 0x0401316C
+Node15.X = 0
+Node15.Y = 0
+Node15.GridX = 3
+Node15.GridY = 4
