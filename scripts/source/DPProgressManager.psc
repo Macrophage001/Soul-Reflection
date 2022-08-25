@@ -4,6 +4,7 @@ Scriptname DPProgressManager extends Quest
 GlobalVariable Property DragonbornSkillUpRatio Auto
 GlobalVariable Property DragonbornSkillPerkPoint Auto
 GlobalVariable Property DragonbornShowLevelUp Auto
+GlobalVariable Property DragonbornSkillLevel Auto
 
 GlobalVariable Property DPCurrentSoulXP Auto
 GlobalVariable Property DPMaxSoulXP Auto
@@ -28,9 +29,9 @@ Event OnUpdate()
     ; Player has leveled up!
     if (DPCurrentSoulXP.GetValue() >= DPMaxSoulXP.GetValue())
         DragonbornSkillPerkPoint.Mod(1);
-
-        DragonbornShowLevelUp.Mod(1)
-        float newMaxSoulXP = DPBaseMaxSoulXP.GetValue() * Math.pow(DPMaxSoulXPMultiplier.GetValue(), DragonbornShowLevelUp.GetValue());
+        DragonbornSkillLevel.Mod(1);
+        DragonbornShowLevelUp.SetValue(DragonbornSkillLevel.GetValue());
+        float newMaxSoulXP = DPBaseMaxSoulXP.GetValue() * Math.pow(DPMaxSoulXPMultiplier.GetValue(), DragonbornSkillLevel.GetValue());
         DPMaxSoulXP.SetValue(newMaxSoulXP);
 
         UpdateCurrentSoulXP();
