@@ -32,6 +32,7 @@ Event OnUpdate()
         DragonbornSkillLevel.Mod(1);
         DragonbornShowLevelUp.SetValue(DragonbornSkillLevel.GetValue());
         float newMaxSoulXP = DPBaseMaxSoulXP.GetValue() * Math.pow(DPMaxSoulXPMultiplier.GetValue(), DragonbornSkillLevel.GetValue());
+
         DPMaxSoulXP.SetValue(newMaxSoulXP);
 
         UpdateCurrentSoulXP();

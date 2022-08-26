@@ -131,6 +131,8 @@ WordWallListenerQuestScript Property WICastMagic04 Auto
 WordWallListenerQuestScript Property FreeformHighHrothgarA Auto
 {Pointer to WordWallListernQuestScript attached to FreeformHighHrothgarA} ;see PokeWordWallListenerQuests
 
+FormList Property DPWordsAsPerks Auto
+
 GlobalVariable Property DPCurrentSoulXP Auto
 
 GlobalVariable Property DPWordWallXP Auto
@@ -142,6 +144,18 @@ bool Function isLooking()
 endFunction
 
 ;************************************
+
+bool Function Contains(FormList list, Form formToCompare)
+	Int index = list.GetSize();
+	while (index > 0)
+		index -= 1;
+		Form listForm = list.GetAt(index);
+		if (listForm == formToCompare)
+			return True;
+		endif
+	endWhile
+	return False;
+EndFunction
 
 Function StartFX()
 	;player is looking at target, not in combat, and has not learned the word
@@ -155,10 +169,12 @@ Function StartFX()
 		finishedIMOD02 = false
 		finishedIMOD03 = false
 		
-		;In case I want to apply multipliers to xp gain later, storing in seperate variable first.
-		Float xpGained = DPWordWallXP.GetValue();
-
-		DPCurrentSoulXP.Mod(xpGained)
+		if (Contains(DPWordsAsPerks, myWord))
+			Float xpGained = DPWordWallXP.GetValue();
+			DPCurrentSoulXP.Mod(xpGained);
+		else
+			Game.TeachWord(myWord);
+		endif
 		
 		shoutGlobal.value += 1
 		wordSound.disableNoWait()
