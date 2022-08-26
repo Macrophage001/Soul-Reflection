@@ -68,7 +68,7 @@ DebugReloadId = 0
 # Root Node 0 
 #------------------------------------------------------------------
 Node0.Enable = true
-Node0.Links = "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16"
+Node0.Links = "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15"
 
 #------------------------------------------------------------------
 # Perk Tree
@@ -223,13 +223,3 @@ Node15.X = 0.25
 Node15.Y = 0
 Node15.GridX = 3
 Node15.GridY = 4
-
-# 16 : Phantom Form (Added by Wyrmstooth)
-#------------------------------------------------------------------
-Node16.Enable = true
-Node16.PerkFile = "SoulReflection-WyrmstoothPatch.esp"
-Node16.PerkId = 0x06007488
-Node16.X = 0.25
-Node16.Y = 0
-Node16.GridX = 4
-Node16.GridY = 0

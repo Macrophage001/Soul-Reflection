@@ -6,4 +6,5 @@ Event OnEffectStart(Actor akTarget, Actor akCaster)
     if (akTarget == Game.GetPlayer())
         game.TeachWord(Word)
     endif
+    self.Dispel()
 EndEvent
